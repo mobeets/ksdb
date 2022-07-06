@@ -49,7 +49,8 @@ def usdb_to_json(infile):
 
 infiles = glob.glob('usdb/*.txt')
 for infile in infiles:
-    outfile = os.path.join('notes', os.path.split(infile)[1].replace('.txt', '.json'))
+    fnm = os.path.split(infile)[1].replace('.txt', '.json').replace(' ', '-').replace('---','-')
+    outfile = os.path.join('notes', fnm)
     print(infile, outfile)
     song = usdb_to_json(infile)
     to_json(song, outfile)
