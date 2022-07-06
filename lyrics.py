@@ -69,5 +69,5 @@ for notefile in notefiles:
     else:
         print("Missing mp3 or json for file: {}".format(key))
 songs = list(set(songs))
-songs = [{key: key} for key in songs]
+songs = dict((key, key) for key in songs)
 to_json(songs, outfile)
