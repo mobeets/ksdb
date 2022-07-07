@@ -6,7 +6,7 @@
 #YEAR:1995
 #LANGUAGE:English
 #BPM:521,96
-#GAP:35000
+#GAP:14500
 #TRANSPOSE:48
 #VIDEO:Bjork - It\'s Oh So Quiet.vob
 * 10 16 11 It's,
