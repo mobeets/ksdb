@@ -4,9 +4,10 @@
 #YEAR:1995
 #LANGUAGE:English
 #BPM:355.47
-#GAP:22459
+#GAP:23559
 #VIDEO:Fiona Apple - Criminal.vob
 #VIDEOGAP:2,2
+#TRANSPOSE:48
 #START:15
 : 0 2 13 I
 : 2 2 15 've

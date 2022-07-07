@@ -26,6 +26,10 @@ def usdb_to_json(infile):
     title = get_line('title')
     bpm = float(get_line('bpm').replace(',', '.'))
     gap = int(get_line('gap'))
+    try:
+        transpose = int(get_line('transpose'))
+    except:
+        transpose = 0
     note_start_keys = [':', '*', 'F']
     notes = []
     for line in lines:
@@ -43,7 +47,7 @@ def usdb_to_json(infile):
     # - default offset of notes is 60?
     return {'artist': artist, 'title': title,
             'bpm': bpm, 'gap': gap, 'notes': notes,
-            'ticks_per_beat': 4, 'note_transpose': 60}
+            'ticks_per_beat': 4, 'note_transpose': transpose}
     
 #%%
 
@@ -59,15 +63,15 @@ for infile in infiles:
 
 outfile = 'songs.json'
 songs = []
-notefiles = glob.glob('notes/*.json') + glob.glob('mp3/*.mp3')
+notefiles = glob.glob('usdb/*.txt')
 for notefile in notefiles:
-    key = os.path.splitext(os.path.split(notefile)[1])[0]
-    fnote = os.path.join('notes', key + '.json')
-    snote = os.path.join('mp3', key + '.mp3')
+    label = os.path.splitext(os.path.split(notefile)[1])[0]
+    value = label.replace(' ', '-').replace('---', '-')
+    fnote = os.path.join('notes', value + '.json')
+    snote = os.path.join('mp3', value + '.mp3')
     if os.path.exists(fnote) and os.path.exists(snote):
-        songs.append(key)
+        songs.append({'value': value, 'label': label})
     else:
-        print("Missing mp3 or json for file: {}".format(key))
-songs = list(set(songs))
-songs = dict((key, key) for key in songs)
+        print("Missing mp3 or json for file: {}".format(label))
+print(songs)
 to_json(songs, outfile)
