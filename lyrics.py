@@ -16,7 +16,7 @@ def to_json(data, outfile):
         json.dump(data, f)
 
 def usdb_to_json(infile):
-    with open(infile) as f:
+    with open(infile, encoding='utf-8', errors='ignore') as f:
         lines = f.readlines()
     if not lines:
         return
