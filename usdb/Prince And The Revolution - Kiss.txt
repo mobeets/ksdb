@@ -5,7 +5,7 @@
 #GENRE:R&B
 #LANGUAGE:English
 #BPM:222,9
-#GAP:9170
+#GAP:14700
 #TRANSPOSE:60
 #VIDEO:v=H9tEvfIsDyo,co=kiss-579aad39477fd.jpg,bg=prince-5120f5ed8c0f9.jpg
 : 0 4 4 You

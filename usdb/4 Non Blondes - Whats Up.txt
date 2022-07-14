@@ -7,7 +7,7 @@
 #LANGUAGE:English
 #BPM:270
 #GAP:32276
-#TRANSPOSE:48
+#TRANSPOSE:60
 #VIDEO:v=6NXnxTNIWkc,co=whats-up-610f7f5ccbc4f.jpg,bg=4-non-blondes-5827c6d402b85.jpg
 : 0 1 13 Twen
 : 2 1 13 ty

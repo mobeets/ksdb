@@ -3,8 +3,8 @@
 #MP3:Fleetwood Mac - The Chain.mp3
 #LANGUAGE:English
 #BPM:152
-#GAP:30350
-#TRANSPOSE:48
+#GAP:30650
+#TRANSPOSE:60
 #VIDEO:Fleetwood Mac - The Chain.mp4
 : 0 2 14 Lis
 : 2 1 14 ten 
