@@ -4,7 +4,7 @@
 #EDITION:SingStar '90s
 #LANGUAGE:English
 #BPM:340
-#GAP:50020
+#GAP:50270
 #TRANSPOSE:0
 #VIDEO:v=6Ejga4kJUts,co=zombie-5af1fce29e1c5.jpg,bg=cranberries-the-558d35ea89984.jpg
 : 0 5 64 A
