@@ -1,0 +1,33 @@
+{
+	"Celine-Dion-Its-All-Coming-Back-To-Me-Now":
+		{
+			"notes_to_shift_down": [
+				{"begin": 1180, "end": 1907},
+				{"begin": 3820, "end": 4001},
+				{"begin": 4128, "end": 4435},
+				{"begin": 4532, "end": 4717},
+				{"begin": 4824, "end": 4854},
+				{"begin": 4957, "end": 5207},
+				{"begin": 6470, "end": 6630},
+				{"begin": 6989, "end": 7353}
+			]
+		},
+	"Adele-Rolling-in-the-Deep": {},
+	"4-Non-Blondes-Whats-Up": {
+		"notes_to_shift_down": [
+			{"begin": 0, "end": 451},
+			{"begin": 1543, "end": 1973},
+			{"begin": 4028, "end": 4600}
+		]
+	},
+	"The-Cranberries-Zombie": {},
+	"Prince-And-The-Revolution-Kiss": {},
+	"Fleetwood-Mac-The-Chain": {
+		"notes_to_shift_down": [
+			{"begin": 0, "end": 191},
+			{"begin": 643, "end": 964},
+			{"begin": 2066, "end": 2300}
+		]
+	},
+	"Bjork-Its-Oh-So-Quiet": {}
+}

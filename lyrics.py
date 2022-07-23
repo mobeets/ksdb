@@ -15,7 +15,12 @@ def to_json(data, outfile):
     with open(outfile, 'w') as f:
         json.dump(data, f)
 
-def usdb_to_json(infile):
+def usdb_to_json(infile, fixes=None):
+    if fixes is None or not fixes:
+        fixes = {}
+    else:
+        if list(fixes.keys()) != ["notes_to_shift_down"]:
+            raise Exception("Unrecognized keys in fixes.")
     with open(infile, encoding='utf-8', errors='ignore') as f:
         lines = f.readlines()
     if not lines:
@@ -40,6 +45,12 @@ def usdb_to_json(infile):
             pitch = int(item[3])
             word = item[4].strip()
             word = word.replace('~', '')
+            if 'notes_to_shift_down' in fixes:
+                for item in fixes['notes_to_shift_down']:
+                    t1 = item['begin']
+                    t2 = item['end']
+                    if (t >= t1) and (t <= t2):
+                        pitch -= 12
             note = {'time': t, 'duration': dur, 'note': pitch, 'name': word}
             notes.append(note)
     # to do:
@@ -51,12 +62,14 @@ def usdb_to_json(infile):
     
 #%%
 
+fixes = json.loads(open('fixes.json').read())
 infiles = glob.glob('usdb/*.txt')
 for infile in infiles:
     fnm = os.path.split(infile)[1].replace('.txt', '.json').replace(' ', '-').replace('---','-')
     outfile = os.path.join('notes', fnm)
-    print(infile, outfile)
-    song = usdb_to_json(infile)
+    print(fnm, infile, outfile)
+    fix = fixes.get(fnm.replace('.json', ''), {})
+    song = usdb_to_json(infile, fix)
     to_json(song, outfile)
 
 #%%
