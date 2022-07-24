@@ -74,10 +74,12 @@ for infile in infiles:
 
 #%%
 
+print("WARNING! Fix the ignoring apostrophes in song titles thing.")
 outfile = 'songs.json'
 songs = []
 notefiles = glob.glob('usdb/*.txt')
 for notefile in notefiles:
+    # to do: the below removes apostrophes in song titles (e.g., celine)
     label = os.path.splitext(os.path.split(notefile)[1])[0]
     value = label.replace(' ', '-').replace('---', '-')
     fnote = os.path.join('notes', value + '.json')
