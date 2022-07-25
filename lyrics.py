@@ -64,29 +64,29 @@ def usdb_to_json(infile, fixes=None):
 
 fixes = json.loads(open('fixes.json').read())
 infiles = glob.glob('usdb/*.txt')
+songs = []
 for infile in infiles:
     fnm = os.path.split(infile)[1].replace('.txt', '.json').replace(' ', '-').replace('---','-')
     outfile = os.path.join('notes', fnm)
     print(fnm, infile, outfile)
     fix = fixes.get(fnm.replace('.json', ''), {})
     song = usdb_to_json(infile, fix)
+    songs.append(song)
     to_json(song, outfile)
 
 #%%
 
-print("WARNING! Fix the ignoring apostrophes in song titles thing.")
 outfile = 'songs.json'
-songs = []
-notefiles = glob.glob('usdb/*.txt')
-for notefile in notefiles:
+added_songs = []
+for song, notefile in zip(songs, infiles):
     # to do: the below removes apostrophes in song titles (e.g., celine)
-    label = os.path.splitext(os.path.split(notefile)[1])[0]
-    value = label.replace(' ', '-').replace('---', '-')
+    label = '{} - {}'.format(song['artist'], song['title'])
+    value = os.path.splitext(os.path.split(notefile)[1])[0].replace(' ', '-').replace('---', '-')
     fnote = os.path.join('notes', value + '.json')
     snote = os.path.join('mp3', value + '.mp3')
     if os.path.exists(fnote) and os.path.exists(snote):
-        songs.append({'value': value, 'label': label})
+        added_songs.append({'value': value, 'label': label})
     else:
         print("Missing mp3 or json for file: {}".format(label))
-print(songs)
-to_json(songs, outfile)
+print(added_songs)
+to_json(added_songs, outfile)
