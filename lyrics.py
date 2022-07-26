@@ -8,12 +8,13 @@ Created on Fri Jul  1 19:04:05 2022
 import glob
 import json
 import os.path
+import numpy as np
 
 #%%
 
-def to_json(data, outfile):
+def to_json(data, outfile, indent=None):
     with open(outfile, 'w') as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=indent)
 
 def usdb_to_json(infile, fixes=None):
     if fixes is None or not fixes:
@@ -84,9 +85,11 @@ for song, notefile in zip(songs, infiles):
     value = os.path.splitext(os.path.split(notefile)[1])[0].replace(' ', '-').replace('---', '-')
     fnote = os.path.join('notes', value + '.json')
     snote = os.path.join('mp3', value + '.mp3')
+    score = np.var([x['note'] for x in song['notes']])
+
     if os.path.exists(fnote) and os.path.exists(snote):
-        added_songs.append({'value': value, 'label': label})
+        added_songs.append({'value': value, 'label': label, 'debug': False, 'score': score})
     else:
         print("Missing mp3 or json for file: {}".format(label))
 print(added_songs)
-to_json(added_songs, outfile)
+to_json(sorted(added_songs, key=lambda x: x['score']), outfile, indent=2)

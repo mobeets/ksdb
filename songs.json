@@ -1,1 +1,62 @@
-[{"value": "No-Doubt-Dont-Speak", "label": "No Doubt - Don't Speak"}, {"value": "Adele-Rolling-in-the-Deep", "label": "Adele - Rolling In The Deep"}, {"value": "Celine-Dion-Its-All-Coming-Back-To-Me-Now", "label": "Celine Dion - It's All Coming Back To Me Now"}, {"value": "4-Non-Blondes-Whats-Up", "label": "4 Non Blondes - What's Up"}, {"value": "Fiona-Apple-Criminal", "label": "Fiona Apple - Criminal"}, {"value": "The-Cranberries-Zombie", "label": "The Cranberries - Zombie"}, {"value": "Prince-And-The-Revolution-Kiss", "label": "Prince And The Revolution - Kiss"}, {"value": "Queen-Dont-Stop-Me-Now", "label": "Queen - Don't Stop Me Now"}, {"value": "Fleetwood-Mac-The-Chain", "label": "Fleetwood Mac - The Chain"}, {"value": "Bjork-Its-Oh-So-Quiet", "label": "Bjork - It's Oh So Quiet"}]
+[
+  {
+    "value": "No-Doubt-Dont-Speak",
+    "label": "No Doubt - Don't Speak",
+    "debug": false,
+    "score": 10.715823139535482
+  },
+  {
+    "value": "Fleetwood-Mac-The-Chain",
+    "label": "Fleetwood Mac - The Chain",
+    "debug": false,
+    "score": 11.084904484680163
+  },
+  {
+    "value": "Adele-Rolling-in-the-Deep",
+    "label": "Adele - Rolling In The Deep",
+    "debug": false,
+    "score": 12.752729719338715
+  },
+  {
+    "value": "Fiona-Apple-Criminal",
+    "label": "Fiona Apple - Criminal",
+    "debug": false,
+    "score": 12.785497890005571
+  },
+  {
+    "value": "Prince-And-The-Revolution-Kiss",
+    "label": "Prince And The Revolution - Kiss",
+    "debug": false,
+    "score": 13.696484900895236
+  },
+  {
+    "value": "The-Cranberries-Zombie",
+    "label": "The Cranberries - Zombie",
+    "debug": false,
+    "score": 15.044523473877566
+  },
+  {
+    "value": "Bjork-Its-Oh-So-Quiet",
+    "label": "Bjork - It's Oh So Quiet",
+    "debug": false,
+    "score": 18.43974648683002
+  },
+  {
+    "value": "Celine-Dion-Its-All-Coming-Back-To-Me-Now",
+    "label": "Celine Dion - It's All Coming Back To Me Now",
+    "debug": false,
+    "score": 22.152929444710058
+  },
+  {
+    "value": "4-Non-Blondes-Whats-Up",
+    "label": "4 Non Blondes - What's Up",
+    "debug": false,
+    "score": 31.552370676174395
+  },
+  {
+    "value": "Queen-Dont-Stop-Me-Now",
+    "label": "Queen - Don't Stop Me Now",
+    "debug": false,
+    "score": 34.4446477040047
+  }
+]
