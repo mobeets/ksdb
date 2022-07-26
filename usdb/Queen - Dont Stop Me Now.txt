@@ -1,6 +1,6 @@
 #ARTIST:Queen
-#TITLE:Don’t Stop Me Now
-#MP3:Queen - Don’t Stop Me Now.mp3
+#TITLE:Don't Stop Me Now
+#MP3:Queen - Don't Stop Me Now.mp3
 #EDITION:SingStar Queen
 #GENRE:Rock
 #YEAR:1978
