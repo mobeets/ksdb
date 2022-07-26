@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #BPM:396.85
 #GAP:36400
+#TRANSPOSE:60
 #VIDEO:v=TR3Vdo5etCQ,co=dont-speak-5ed967401a722.jpg,bg=no-doubt-4e4923afd231b.jpg
 : 0 3 5 You 
 : 4 3 7 and 
