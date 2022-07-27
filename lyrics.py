@@ -80,9 +80,8 @@ for infile in infiles:
 outfile = 'songs.json'
 added_songs = []
 for song, notefile in zip(songs, infiles):
-    # to do: the below removes apostrophes in song titles (e.g., celine)
     label = '{} - {}'.format(song['artist'], song['title'])
-    value = os.path.splitext(os.path.split(notefile)[1])[0].replace(' ', '-').replace('---', '-')
+    value = os.path.splitext(os.path.split(notefile)[1])[0].replace('...','').replace(' ', '-').replace('---', '-')
     fnote = os.path.join('notes', value + '.json')
     snote = os.path.join('mp3', value + '.mp3')
     score = np.var([x['note'] for x in song['notes']])
@@ -91,5 +90,5 @@ for song, notefile in zip(songs, infiles):
         added_songs.append({'value': value, 'label': label, 'debug': False, 'score': score})
     else:
         print("Missing mp3 or json for file: {}".format(label))
-print(added_songs)
+# print(added_songs)
 to_json(sorted(added_songs, key=lambda x: x['score']), outfile, indent=2)

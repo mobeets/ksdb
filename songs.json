@@ -12,6 +12,12 @@
     "score": 11.084904484680163
   },
   {
+    "value": "New-Radicals-You-Get-What-You-Give",
+    "label": "New Radicals - You Get What You Give",
+    "debug": true,
+    "score": 11.624344934157486
+  },
+  {
     "value": "Adele-Rolling-in-the-Deep",
     "label": "Adele - Rolling In The Deep",
     "debug": false,
@@ -34,6 +40,24 @@
     "label": "The Cranberries - Zombie",
     "debug": false,
     "score": 15.044523473877566
+  },
+  {
+    "value": "Britney-Spears-Baby-One-More-Time",
+    "label": "Britney Spears - ...Baby One More Time",
+    "debug": true,
+    "score": 15.068556350740089
+  },
+  {
+    "value": "Dua-Lipa-New-Rules",
+    "label": "Dua Lipa - New Rules",
+    "debug": true,
+    "score": 16.085987970594786
+  },
+  {
+    "value": "Alan-Jackson-Chattahoochee",
+    "label": "Alan Jackson - Chattahoochee",
+    "debug": true,
+    "score": 17.202473029946063
   },
   {
     "value": "Bjork-Its-Oh-So-Quiet",
