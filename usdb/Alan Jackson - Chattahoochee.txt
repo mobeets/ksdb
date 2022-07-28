@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #BPM:240
 #GAP:36188
+#TRANSPOSE:60
 #VIDEO:v=JW5UEW2kYvc
 : 0 6 60 Well
 : 8 2 60  way

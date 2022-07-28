@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #BPM:300
 #GAP:21120
+#TRANSPOSE:60
 #VIDEO:v=DL7-CKirWZE,co=m.media-amazon.com/images/I/71Sxzz6YScL._SL1500_.jpg,bg=new-radicals-5248beb7cc910.jpg
 F 0 4 4 One
 F 20 5 4  two,

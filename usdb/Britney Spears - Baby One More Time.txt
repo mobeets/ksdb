@@ -7,6 +7,7 @@
 #LANGUAGE:English
 #BPM:240
 #GAP:18390
+#TRANSPOSE:0
 #VIDEO:v=C-u5WLJ9Yk4,co=baby-one-more-time-56a9351221127.jpg,bg=britney-spears-4ddd30d4ac971.jpg
 : 0 3 60 Oh
 : 5 3 60  ba
