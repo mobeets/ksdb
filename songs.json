@@ -14,7 +14,7 @@
   {
     "value": "New-Radicals-You-Get-What-You-Give",
     "label": "New Radicals - You Get What You Give",
-    "debug": true,
+    "debug": false,
     "score": 11.624344934157486
   },
   {
@@ -36,28 +36,28 @@
     "score": 13.696484900895236
   },
   {
+    "value": "Britney-Spears-Baby-One-More-Time",
+    "label": "Britney Spears - ...Baby One More Time",
+    "debug": false,
+    "score": 15.037064146925736
+  },
+  {
     "value": "The-Cranberries-Zombie",
     "label": "The Cranberries - Zombie",
     "debug": false,
     "score": 15.044523473877566
   },
   {
-    "value": "Britney-Spears-Baby-One-More-Time",
-    "label": "Britney Spears - ...Baby One More Time",
-    "debug": true,
-    "score": 15.068556350740089
+    "value": "Alan-Jackson-Chattahoochee",
+    "label": "Alan Jackson - Chattahoochee",
+    "debug": false,
+    "score": 15.816721163156139
   },
   {
     "value": "Dua-Lipa-New-Rules",
     "label": "Dua Lipa - New Rules",
-    "debug": true,
+    "debug": false,
     "score": 16.08949654711517
-  },
-  {
-    "value": "Alan-Jackson-Chattahoochee",
-    "label": "Alan Jackson - Chattahoochee",
-    "debug": true,
-    "score": 17.202473029946063
   },
   {
     "value": "Bjork-Its-Oh-So-Quiet",
@@ -80,7 +80,7 @@
   {
     "value": "Queen-Dont-Stop-Me-Now",
     "label": "Queen - Don't Stop Me Now",
-    "debug": true,
+    "debug": false,
     "score": 34.4446477040047
   }
 ]

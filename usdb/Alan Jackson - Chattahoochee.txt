@@ -6,7 +6,7 @@
 #YEAR:1993
 #LANGUAGE:English
 #BPM:240
-#GAP:36188
+#GAP:35338
 #TRANSPOSE:60
 #VIDEO:v=JW5UEW2kYvc
 : 0 6 60 Well
@@ -177,9 +177,6 @@
 : 541 2 50  'bout
 : 543 1 48 ~
 : 546 7 48  love
-- 555 556
-F 574 7 60 Aww
-F 588 5 60  haw
 - 595 738
 : 758 4 60 Well
 : 764 2 60  we
@@ -594,9 +591,4 @@ F 588 5 60  haw
 : 2952 10 47  love
 : 2964 17 48 ~
 - 2983 3119
-F 3139 11 41 Yeah
-F 3158 26 41  hee
-- 3186 3238
-F 3258 3 41 That's
-F 3262 5 41  right
 E
