@@ -12,12 +12,6 @@
     "score": 11.084904484680163
   },
   {
-    "value": "New-Radicals-You-Get-What-You-Give",
-    "label": "New Radicals - You Get What You Give",
-    "debug": false,
-    "score": 11.624344934157486
-  },
-  {
     "value": "Adele-Rolling-in-the-Deep",
     "label": "Adele - Rolling In The Deep",
     "debug": false,
@@ -34,6 +28,12 @@
     "label": "Prince And The Revolution - Kiss",
     "debug": false,
     "score": 13.696484900895236
+  },
+  {
+    "value": "New-Radicals-You-Get-What-You-Give",
+    "label": "New Radicals - You Get What You Give",
+    "debug": false,
+    "score": 13.77659812201426
   },
   {
     "value": "Britney-Spears-Baby-One-More-Time",

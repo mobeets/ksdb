@@ -9,12 +9,11 @@
 #GAP:21120
 #TRANSPOSE:60
 #VIDEO:v=DL7-CKirWZE,co=m.media-amazon.com/images/I/71Sxzz6YScL._SL1500_.jpg,bg=new-radicals-5248beb7cc910.jpg
-F 0 4 4 One
-F 20 5 4  two,
-F 41 4 4  one
-F 52 4 4  two
-F 62 4 4  three
-F 73 17 4  ow!
+F 0 4 12 One
+F 20 5 12  two,
+F 41 4 12  one
+F 52 4 12  two
+F 62 4 12  three
 - 92
 : 262 7 4 Wake
 : 278 5 4  up
@@ -202,11 +201,11 @@ F 73 17 4  ow!
 : 1776 7 2  you're
 * 1786 10 6  tops
 - 1798
-: 1832 2 2 Give
-: 1835 1 2  it
-: 1837 2 2  to
-: 1840 2 2  me
-F 1843 10 2  now
+: 1832 2 14 Give
+: 1835 1 14  it
+: 1837 2 14  to
+: 1840 2 14  me
+F 1843 10 14  now
 - 1855
 : 1864 6 4 Four
 : 1880 5 4  A
