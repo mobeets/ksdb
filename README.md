@@ -5,3 +5,5 @@
 - Run `python lyrics.py`, which will create a .json file in `notes/`, and ensure the scripts can see the mp3 file.
 
 You may find that the lyrics are not aligned with the words in the mp3. To fix this, find the exact time in seconds that the words start, multiply by 1000, and put this number as the "#GAP" in the .txt file. Then re-run `python lyrics.py`.
+
+Another issue is that sometimes the notes in the .txt file need to be transposed. If that's the case, add a "#TRANSPOSE" line to indicate the offset.
