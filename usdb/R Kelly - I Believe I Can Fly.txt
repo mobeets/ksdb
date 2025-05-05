@@ -6,7 +6,7 @@
 #YEAR:1996
 #LANGUAGE:English
 #BPM:240.85
-#GAP:38000
+#GAP:40000
 #TRANSPOSE:48
 #VIDEO:v=4qPOWeA-L5I,co=https://images.genius.com/fe3c3c42508730b94c445324ed9b861c.1000x989x1.jpg,co-crop=6-0-989-989,bg=kelly-r-5207dadcced79.jpg
 : 0 2 7 I 
